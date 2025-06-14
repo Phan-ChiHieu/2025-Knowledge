@@ -2,11 +2,11 @@
 
 ## 1. Client-Server Achitechture (Kiến trúc hệ thống máy khách - máy chủ)
 
-Open: [Client-Server Architecture](./2_client_server_architecture.md)
+Open: [Client-Server Architecture](./1_client_server_architecture.md)
 
 ## 2. IP Address
 
-Open: [IP Adrress](./3_ip_address.md)
+Open: [IP Adrress](./2_ip_address.md)
 
 ## 3. DNS (Domain name server)
 
