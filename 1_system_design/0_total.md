@@ -12,5 +12,13 @@ Open: [IP Adrress](./2_ip_address.md)
 
 Open: [Domain Name Server](./3_dns.md)
 
+## 4. Proxy or Reverse Proxy
+
+Open: [Proxy or Reverse Proxy](./4_proxy.md)
+
+## 4. Proxy or Reverse Proxy
+
+Open: [Latency](./5_latency.md)
+
 <!-- Link tutorial -->
  <!-- https://www.youtube.com/watch?v=s9Qh9fWeOAk -->
