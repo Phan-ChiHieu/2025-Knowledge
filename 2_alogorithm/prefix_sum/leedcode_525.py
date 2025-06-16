@@ -47,6 +47,13 @@ class SolutionOptimized:
 
 
 # --- TEST ---
-nums = [0, 1, 1, 1, 1, 1, 0, 0, 0]
-sol = Solution()
-print("Max balanced subarray length:", sol.findMaxLength(nums))
+# nums = [0, 1, 1, 1, 1, 1, 0, 0, 0]
+# sol = Solution()
+# print("Max balanced subarray length:", sol.findMaxLength(nums))
+
+
+count = 0
+sum_to_index = {0: -1, -1: 0}
+
+print("Count:", count in sum_to_index)
+print(">>>>>", sum_to_index[count])

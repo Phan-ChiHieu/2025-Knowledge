@@ -10,5 +10,7 @@ Open: [IP Adrress](./2_ip_address.md)
 
 ## 3. DNS (Domain name server)
 
+Open: [Domain Name Server](./3_dns.md)
+
 <!-- Link tutorial -->
  <!-- https://www.youtube.com/watch?v=s9Qh9fWeOAk -->
