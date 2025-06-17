@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  pgvector:
+    image: pgvector/pgvector:pg17
+    container_name: pgvector-db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres-user
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: pgvector-db
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data
+
+volumes:
+  pgvector_data:

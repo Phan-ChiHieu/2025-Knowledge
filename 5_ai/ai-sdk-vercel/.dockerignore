@@ -1,0 +1,24 @@
+# Node modules
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Git & metadata
+.git
+.gitignore
+
+# Env & config
+.env
+.env.local
+Dockerfile
+docker-compose.yml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+.next
+dist
+out
+coverage
