@@ -1,0 +1,32 @@
+# Ignore Node.js dependencies và lock files
+**/node_modules/
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
+
+# Next.js build output
+**/.next/
+**/out/
+
+# Vercel config
+**/.vercel/
+
+# Environment variables
+**/.env*
+!.env.example  # nếu bạn muốn giữ file mẫu cấu hình
+
+# Logs
+**/*.log
+**/logs/
+
+# IDE/editor config files
+**/.DS_Store
+**/.idea/
+**/.vscode/
+**/*.swp
+
+# Coverage reports (nếu dùng test coverage)
+**/coverage/
+
+# Optional: Ignore system-specific files
+Thumbs.db
