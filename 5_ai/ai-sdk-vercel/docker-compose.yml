@@ -1,4 +1,3 @@
-version: "3.8"
 
 services:
   pgvector:
@@ -8,9 +7,9 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: postgres-user
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: pgvector-db
+      POSTGRES_DB: pgvectordb
     volumes:
       - pgvector_data:/var/lib/postgresql/data
 

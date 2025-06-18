@@ -8,6 +8,13 @@
       "when": 1750147292293,
       "tag": "0000_chief_carnage",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1750152997280,
+      "tag": "0001_pretty_mad_thinker",
+      "breakpoints": true
     }
   ]
 }
