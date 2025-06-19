@@ -1,5 +1,3 @@
-Chắc chắn rồi! Dưới đây là cách giải thích lại về **Prefix Sum (Tổng tích lũy)** một cách đơn giản và dễ hiểu – như để bạn nhỏ cũng có thể hiểu:
-
 ---
 
 ### 🌟 Prefix Sum là gì?
