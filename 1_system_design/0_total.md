@@ -16,9 +16,17 @@ Open: [Domain Name Server](./3_dns.md)
 
 Open: [Proxy or Reverse Proxy](./4_proxy.md)
 
-## 4. Proxy or Reverse Proxy
+## 5. Latency (độ trễ)
 
 Open: [Latency](./5_latency.md)
+
+## 6. HTTP/HTTPS
+
+Open: [HTTP/HTTPS](./6_http_and_https.md)
+
+## 7. API's (Application Programing Interface)
+
+Open: [API's](./7_api.md)
 
 <!-- Link tutorial -->
  <!-- https://www.youtube.com/watch?v=s9Qh9fWeOAk -->
