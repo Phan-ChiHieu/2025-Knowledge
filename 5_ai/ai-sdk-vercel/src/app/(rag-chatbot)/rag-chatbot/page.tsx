@@ -5,7 +5,7 @@ import { useChat } from "@ai-sdk/react";
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat({
     api: "/api/rag/chat",
-    maxSteps: 3,
+    maxSteps: 3, // The AI SDK has a feature called maxSteps which will automatically send tool call results back to the model!
   });
   return (
     <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">

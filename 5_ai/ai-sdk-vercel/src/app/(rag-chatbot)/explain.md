@@ -430,3 +430,7 @@ export const createResource = async (input: NewResourceParams) => {
   }
 };
 ```
+
+---
+
+more: https://ai-sdk.dev/docs/guides/rag-chatbot#refining-your-prompt

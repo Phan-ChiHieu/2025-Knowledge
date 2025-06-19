@@ -117,6 +117,7 @@ export const generateEmbedding = async (value: string): Promise<number[]> => {
 
 //---------------==------------------------------------==------------------
 
+// tìm Nội dung có liên quan
 export const findRelevantContent = async (userQuery: string) => {
   const userQueryEmbedded = await generateEmbedding(userQuery);
   const similarity = sql<number>`1 - (${cosineDistance(embeddings.embedding, userQueryEmbedded)})`;
@@ -128,3 +129,43 @@ export const findRelevantContent = async (userQuery: string) => {
     .limit(4);
   return similarGuides;
 };
+
+/*
+
+🧠 Chuyển đổi truy vấn thành embedding vector
+  ```tsx
+    const userQueryEmbedded = await generateEmbedding(userQuery);
+  ```
+
+  - Sử dụng hàm `generateEmbedding` để chuyển đổi truy vấn đầu vào thành vector embedding.
+  - Kết quả là một mảng số (vector) đại diện cho nội dung của truy vấn.
+  - Vector này sẽ được dùng để so sánh độ tương đồng với các vector đã lưu trong DB.
+
+📏 Tính độ tương đồng bằng khoảng cách cosine:
+
+    ```tsx
+      const similarity = sql<number>`1 - (${cosineDistance(embeddings.embedding, userQueryEmbedded)})`;
+    ```
+
+  - cosineDistance() tính khoảng cách giữa hai vectors (càng nhỏ thì càng tương tự).
+  - 1 - distance giúp biến đổi nó thành độ tương đồng (similarity), vì cosine similarity ∈ [0, 1].
+  - Được định nghĩa thành một biểu thức SQL để nhúng vào truy vấn.
+
+🗃️ Truy vấn cơ sở dữ liệu
+
+    ```tsx
+      const similarGuides = await db
+        .select({ name: embeddings.content, similarity })
+        .from(embeddings)
+        .where(gt(similarity, 0.5))
+        .orderBy((t) => desc(t.similarity))
+        .limit(4);
+
+    ```
+
+  - Tìm tất cả các embeddings trong DB mà độ tương đồng > 0.5.
+  - Kết quả được sắp xếp theo độ tương đồng giảm dần.
+  - Giới hạn kết quả chỉ lấy 4 bản ghi.
+
+==> Trả về danh sách các nội dung (content) có độ tương đồng cao với truy vấn đầu vào.  
+*/
