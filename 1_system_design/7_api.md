@@ -7,3 +7,9 @@
 - The API sends back the response in a structured format (**định dạng có cấu trúc**), usually JSON or XML, which the client understands and can display (**hiển thị**).
 
 ![Images Demo](./images/api/1.webp)
+
+- There are different API styles to serve (**phuc vu**) different needs, two of the most popular ones are REST and GraphQL
+
+- Among the different api styles REST is the most widely used
+
+Open [REST](./8_rest.md)

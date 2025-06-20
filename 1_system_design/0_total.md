@@ -28,5 +28,21 @@ Open: [HTTP/HTTPS](./6_http_and_https.md)
 
 Open: [API's](./7_api.md)
 
+## 8. REST
+
+Open: [REST](./8_rest.md)
+
+## 9. GraphQL
+
+Open: [GraphQL](./9_graphql.md)
+
+## 10. Database
+
+Open: [Database](./10_database.md)
+
+## 11. SQL or NoSQL
+
+Open [SQL or NoSQL](./11_sql_or_nosql.md)
+
 <!-- Link tutorial -->
  <!-- https://www.youtube.com/watch?v=s9Qh9fWeOAk -->
