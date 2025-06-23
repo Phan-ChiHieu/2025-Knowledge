@@ -44,5 +44,25 @@ Open: [Database](./10_database.md)
 
 Open [SQL or NoSQL](./11_sql_or_nosql.md)
 
+## 12. Vertial Scaling
+
+Open [Vertial Scaling](./12_vertical_scaling.md)
+
+## 13. Horizontal Scaling
+
+Open [Horizontal Scaling](./13_horizontal_scaling.md)
+
+## 14. Load Balancer
+
+Open [Horizontal Scaling](./14_load_balancer.md)
+
+## 15. Indexing
+
+Open [Indexing](./15_indexing.md)
+
+## 15. Replication
+
+Open [Replication](./16_replication.md)
+
 <!-- Link tutorial -->
  <!-- https://www.youtube.com/watch?v=s9Qh9fWeOAk -->
