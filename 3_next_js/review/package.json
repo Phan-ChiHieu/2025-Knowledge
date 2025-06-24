@@ -1,0 +1,30 @@
+{
+  "name": "review",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "prettier": "prettier --write --ignore-unknown ."
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "15.3.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "0.5.10",
+    "@tailwindcss/postcss": "4.1.4",
+    "@tailwindcss/typography": "0.5.16",
+    "@types/ms": "2.1.0",
+    "@types/node": "22.13.1",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.0.3",
+    "postcss": "8.5.3",
+    "prettier": "3.5.3",
+    "prettier-plugin-tailwindcss": "0.6.12",
+    "tailwindcss": "4.1.4",
+    "typescript": "5.7.3"
+  }
+}
