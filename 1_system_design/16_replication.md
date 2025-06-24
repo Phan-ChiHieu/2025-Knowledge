@@ -18,3 +18,5 @@
 
 ![Images Demo](./images/replication/5.webp)
 ![Images Demo](./images/replication/6.webp)
+
+Open [Sharding](./17_sharding.md)

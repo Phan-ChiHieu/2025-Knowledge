@@ -57,3 +57,11 @@ sum_to_index = {0: -1, -1: 0}
 
 print("Count:", count in sum_to_index)
 print(">>>>>", sum_to_index[count])
+
+
+# [0,1,1,1,1,1,0,0,0]
+# [-1,1,1,1,1,1,-1,-1,-1]
+# prefix = [-1,0,1,2,3,4,3,2,1]
+# {..., 1:2,...}
+# count ở lần thứ 8 = 1 => sum_to_index[1] = 2
+# i - sum_to_index[1] = 8 - 2 = 6

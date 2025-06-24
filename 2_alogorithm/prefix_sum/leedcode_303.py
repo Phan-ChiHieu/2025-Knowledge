@@ -40,3 +40,14 @@ for command, param in zip(commands, inputs):
         result.append(obj.sumRange(*param))
 
 print("Output:", result)  # Output: [None, 1, -1, -3]
+
+
+# [-2, 0, 3, -5, 2, -1]
+# prefix =  [-2, -2, 1, -4, -2, -3]
+# ===
+# [0]
+# [0] + [1]
+# [0] + [1] + [2] = left
+# [0] + [1] + [2] + [3] + [4] + [5] = right
+# ==> sum left -> right => 2 -> 5 =>  [2] + [3] + [4] + [5] => remove  [0] + [1] = prefix[1]
+# => prefix[right] - prefix[left - 1]

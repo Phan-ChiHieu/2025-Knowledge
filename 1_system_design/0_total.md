@@ -60,9 +60,17 @@ Open [Horizontal Scaling](./14_load_balancer.md)
 
 Open [Indexing](./15_indexing.md)
 
-## 15. Replication
+## 16. Replication
 
 Open [Replication](./16_replication.md)
+
+## 17. Sharding
+
+Open [Sharding](./17_sharding.md)
+
+## 18. Vertical Partitioning
+
+Open [Vertical Partitioning](./18_vertical_partitioning.md)
 
 <!-- Link tutorial -->
  <!-- https://www.youtube.com/watch?v=s9Qh9fWeOAk -->
