@@ -23,4 +23,4 @@
 
 ![Images Demo](./images/latency/1.webp)
 
-Open: [Proxy/Reverse Proxy](./5_latency.md)
+Open: [Lantency](./5_latency.md)
