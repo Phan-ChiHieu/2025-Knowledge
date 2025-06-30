@@ -72,5 +72,57 @@ Open [Sharding](./17_sharding.md)
 
 Open [Vertical Partitioning](./18_vertical_partitioning.md)
 
+## 19. Caching
+
+Open [Caching](./19_caching.md)
+
+## 20. Denormalization
+
+Open [Denormalization](./20_denormalization.md)
+
+## 21. Cap theorem
+
+Open [Cap theorem](./21_cap_theorem.md)
+
+## 22. Blob Storage
+
+Open [Blob Storage](./22_blob_storage.md)
+
+## 23. CDN
+
+Open [Blob Storage](./23_cdn.md)
+
+## 24. Web Socket
+
+Open [ Web Socket](./24_web_socket.md)
+
+## 25. Web Hooks
+
+Open [Web Hooks](./25_web_hooks.md)
+
+## 26. Monolithic Architechture
+
+Open [Monolithic Architechture](./26_monolithic_architechture.md)
+
+## 27. Microservices
+
+Open [Microservices](./27_microservices.md)
+
+## 28. Message Queues
+
+Open [ Message Queues](./28_message_queues.md)
+
+## 29. Rate Limiting
+
+Open [Rate Limiting](./29_rate_limiting.md)
+
+## 30. API Gateway
+
+Open [API Gateway](./30_api_gateway.md)
+
+## 31. Idempotency
+
+Open [Idempotency](./31_idempotency.md)
+
 <!-- Link tutorial -->
  <!-- https://www.youtube.com/watch?v=s9Qh9fWeOAk -->
