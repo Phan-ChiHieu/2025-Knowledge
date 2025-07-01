@@ -176,6 +176,6 @@ const demos = [
   },
 ] as const satisfies DemoCategory[]; // Chỉ đọc và bảo vệ không thay đổi cấu trúc: thêm, xóa, sửa đổi
 
-export type DemoSlug = (typeof demos)[number]['items'][number]['slug']; // Lấy slug của từng demo
+export type DemoSlug = (typeof demos)[number]['items'][number]['slug']; // Lấy ra tất cả slug của mỗi item trong demos
 
 export const data = { sections, categories, products, demos };

@@ -1,5 +1,3 @@
-'use cache';
-
 import db from '#/lib/db';
 import { Boundary } from '#/ui/boundary';
 import { ProductCard } from '#/ui/product-card';
@@ -8,7 +6,7 @@ export default async function Page() {
   const products = db.product.findMany({ limit: 9 });
 
   return (
-    <Boundary label="page.tsx">
+    <Boundary label="(main)/(shop)/page.tsx">
       <div className="flex flex-col gap-4">
         <h1 className="text-xl font-semibold text-gray-300">
           All{' '}

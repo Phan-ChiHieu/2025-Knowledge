@@ -1,0 +1,33 @@
+# Route Groups
+
+Route groups can be used to:
+
+> Các nhóm tuyến có thể được sử dụng để:
+
+- Opt a route segment out of a shared layout.
+
+  > Chọn một phân đoạn tuyến đường không tham gia bố cục được chia sẻ.
+
+- Organize routes without affecting the URL structure.
+
+  > Tổ chức các tuyến đường mà không ảnh hưởng đến cấu trúc URL.
+
+- Create multiple root layouts by partitioning the top level of the
+  application.
+
+  > Tạo nhiều bố cục gốc bằng cách phân vùng cấp cao nhất của ứng dụng.
+
+### Demo
+
+- This example uses Route Groups to create layouts for different sections of an app.
+  - (main): primary shared UI
+    - (shop): ecommerce specific shared UI
+    - (marketing): marketing specific shared UI
+  - (checkout): top level group that opts out of primary shared UI
+- Try navigating pages and noting the different layouts used for each
+  section.
+
+### Links
+
+- [Docs](https://nextjs.org/docs/app/building-your-application/routing/route-groups)
+- [Code](https://github.com/vercel/next-app-router-playground/tree/main/app/route-groups)
