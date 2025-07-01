@@ -1,0 +1,131 @@
+import db from '#/lib/db';
+import { Grid } from '#/ui/codehike';
+
+export const demo = db.demo.find({ where: { slug: 'cached-routes' } });
+
+# {demo.name}
+
+<Grid>
+
+# !!col
+
+Mark a route segment as _cacheable_ by adding the `use cache` directive to the top of the `layout.tsx` or `page.tsx` file.
+
+> Đánh dấu một phân đoạn tuyến đường là có thể lưu vào bộ nhớ đệm bằng cách thêm lệnh use cache vào đầu tệp layout.tsx hoặc page.tsx.
+
+# !!col
+
+```tsx app/page.tsx
+// !mark
+'use cache';
+
+export default async function Page() {
+  // ...
+}
+```
+
+</Grid>
+
+<Grid>
+
+# !!col
+
+#### On the client
+
+- The router first checks the client cache for a valid cache entry before making a new request to the server.
+
+  > Đầu tiên, bộ định tuyến sẽ kiểm tra bộ đệm của máy khách để tìm mục bộ đệm hợp lệ trước khi thực hiện yêu cầu mới tới máy chủ.
+
+- Cache entries in the server response update the client cache.
+
+  > Các mục bộ đệm trong phản hồi của máy chủ sẽ cập nhật bộ đệm của máy khách.
+
+# !!col
+
+<Image
+  className="border border-gray-800"
+  src="/visuals/cacheable-routes-client-cache.png"
+  alt="Client Cache"
+  width="1800"
+  height="912"
+/>
+
+</Grid>
+
+<Grid>
+
+# !!col
+
+#### On the server
+
+- The renderer first checks the server cache for a valid cache entry before rendering a new result and updating the server cache.
+
+  > Trình kết xuất trước tiên sẽ kiểm tra bộ đệm máy chủ để tìm mục bộ đệm hợp lệ trước khi kết xuất kết quả mới và cập nhật bộ đệm máy chủ.
+
+# !!col
+
+<Image
+  className="border border-gray-800"
+  src="/visuals/cacheable-routes-server-cache.png"
+  alt="Server Cache"
+  width="1800"
+  height="1192"
+/>
+
+</Grid>
+
+<Grid>
+
+# !!col
+
+#### Prerendering
+
+- A cacheable route segment can be prerendered ahead of time, either at build time or during background revalidation.
+
+  > Phân đoạn tuyến có thể lưu vào bộ nhớ đệm có thể được kết xuất trước thời hạn, tại thời điểm xây dựng hoặc trong quá trình xác thực lại ở chế độ nền.
+
+- The prerendered result is distributed across a global content delivery network (CDN).
+
+  > Kết quả được hiển thị trước sẽ được phân phối trên mạng phân phối nội dung toàn cầu (CDN).
+
+- At runtime, the CDN serves the closest static result to the client.
+
+  > Khi chạy, CDN sẽ cung cấp kết quả tĩnh gần nhất cho máy khách.
+
+- `layout.tsx` and `page.tsx` are independently cacheable. This means a `layout.tsx` can be prerendered, while its `page.tsx` can be dynamically rendered at request time.
+
+  > `layout.tsx` và `page.tsx` có thể lưu trữ đệm độc lập. Điều này có nghĩa là `layout.tsx` có thể được kết xuất trước, trong khi `page.tsx` của nó có thể được kết xuất động tại thời điểm yêu cầu.
+
+# !!col
+
+<Image
+  className="border border-gray-800"
+  src="/visuals/cacheable-routes-prerendering.png"
+  alt="Prerendering"
+  width="1800"
+  height="1752"
+/>
+
+</Grid>
+
+### Demo
+
+- An artificial one second delay is added to the `page.tsx` to make the difference more obvious.
+
+  ```tsx app/page.tsx
+  'use cache';
+
+  export default async function Page() {
+    // !mark
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    const products = db.product.findMany();
+    // ...
+  }
+  ```
+
+- Since the whole route is cacheable, this delay only happens the first time the function runs, during prerendering.
+
+### Notes
+
+- This demo uses the experimental `use cache` directive and describes caching behavior once stable.

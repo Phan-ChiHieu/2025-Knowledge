@@ -46,7 +46,7 @@ _ex: Opt a route segment out of a shared layout._
 - Meaning: tổ chức
 - IPA: **/ˈɔː.ɡən.aɪz/**
 
-# Affecting
+# Affecting !== unaffected (không bị ảnh hưởng)
 
 - Meaning: ảnh hưởng đến
 - IPA: **/əˈfek.tɪŋ/**
@@ -57,3 +57,52 @@ _ex: Opt a route segment out of a shared layout._
 - IPA: **/ˈstrʌk.tʃər/**
 
 _ex: Organize routes without affecting the URL structure._
+
+---
+
+# simultaneously
+
+- Meaning: đồng thời
+- IPA: **/ˌsɪm.əlˈteɪ.ni.əs.li/**
+
+# conditionally
+
+- Meaning: có điều kiện
+- IPA: **/kənˈdɪʃ.ən.əl.i/**
+
+# independent !== dependent
+
+- Meaning: độc lập, không phụ thuộc, sung túc
+- IPA: **/ˌɪn.dɪˈpen.dənt/**
+
+_ex: Parallel Routes allow you to simultaneously or conditionally render multiple pages, with independent navigation, in the same layout._
+
+---
+
+# correctly
+
+- Meaning: chính xác
+- IPA: **/kəˈrekt.li/**
+
+# notice
+
+- Meaning: chú ý
+- IPA: **/ˈnəʊ.tɪs/**
+
+---
+
+# Routes
+
+- Meaning: tuyến, tuyến đường
+- Pronuciation: **|roots|**
+
+# Shown
+
+- Meaning: nhìn
+
+---
+
+# Execution
+
+- Meaning: chức năng
+- IPA: **/ˌek.sɪˈkjuː.ʃən/**

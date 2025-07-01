@@ -1,0 +1,27 @@
+# Loading.js
+
+`loading.ts` is a file convention that lets you define fallback UI for a route segment when it's loading, enabling prefetching and instant navigation for dynamic routes.
+
+> loading.ts là một quy ước tệp cho phép bạn xác định giao diện người dùng dự phòng cho một phân đoạn tuyến đường khi nó đang tải, cho phép tải trước và điều hướng tức thời cho các tuyến đường động.
+
+When a user navigates to a dynamic route with prefetched fallback UI, the URL updates immediately and the loading state is shown while the segment loads.
+
+> Khi người dùng điều hướng đến một tuyến đường động với giao diện người dùng dự phòng được tải trước, URL sẽ cập nhật ngay lập tức và trạng thái tải sẽ được hiển thị trong khi phân đoạn tải.
+
+Use filesytem hierarchy to define more or less specific fallback UI.
+
+> Sử dụng hệ thống phân cấp tệp để xác định giao diện người dùng dự phòng cụ thể hơn hoặc ít cụ thể hơn.
+
+### Demo
+
+- Navigate between categories using the menu above.
+- **Instant navigation**: Even though the new route segment is still rendering on the server, we can instantly navigate (update the url and render fallback UI) to the new route. The actual segment content streams in once rendering is complete.
+
+#### Notes
+
+- An artificial delay is added to pages to simulate a slow data request and make the loading state more noticeable.
+
+### Links
+
+- [Docs](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming)
+- [Code](https://github.com/vercel/next-app-router-playground/tree/main/app/loading)
