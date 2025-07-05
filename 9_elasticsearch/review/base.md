@@ -100,3 +100,5 @@ Tóm gọn: nếu bạn nắm vững **cấu trúc index → mapping → search 
 
 - Tìm kiếm linh hoạt và chấp nhận nhiều loại dữ liệu: văn bản thuần túy, number, date, vector-db
 - Ứng dụng vào làm: công cụ tìm kiếm mạnh mẽ (Search system) , hệ thống đề xuất thông minh (Recommendation system), RAG system
+
+//
